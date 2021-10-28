@@ -13,6 +13,7 @@ body[data-theme="light"] {
   --bg-input: #{$white};
   --bg-primary: #{$gray};
   --primary-color: #{$primary-color};
+  --theme-btn-hover: #7e8f9c;
 }
 
 body[data-theme="dark"] {
@@ -22,6 +23,7 @@ body[data-theme="dark"] {
   --bg-input: #353e44;
   --bg-primary: #15232d;
   --primary-color: #{$primary-color};
+  --theme-btn-hover: #c2c219;
 }
 
 html,
@@ -149,4 +151,8 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+body {
+  transition: all 2s linear;
 }
