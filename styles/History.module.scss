@@ -15,17 +15,23 @@
       .date {
         font-size: 0.7rem;
         color: var(--border-color);
+        display: block;
+        @media (min-width: 540px) {
+          display: inline-block;
+        }
       }
       &.income {
         border-right: 4px solid var(--success);
         .amount {
           color: var(--success);
+          white-space: nowrap;
         }
       }
       &.expense {
         border-right: 4px solid var(--danger);
         .amount {
           color: var(--danger);
+          white-space: nowrap;
         }
       }
     }
