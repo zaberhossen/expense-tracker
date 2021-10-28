@@ -1,0 +1,49 @@
+@import "variables";
+// Add Transaction
+.transaction {
+  .formInput {
+    margin-bottom: 1rem;
+    label {
+      display: block;
+      margin-bottom: 0.6rem;
+      font-weight: 500;
+      span {
+        display: block;
+        font-weight: 300;
+        font-size: 0.8rem;
+      }
+    }
+    input {
+      display: block;
+      padding: 0.5rem 1rem;
+      width: 100%;
+      box-sizing: border-box;
+      border: 1px solid var(--border-color);
+      border-radius: 0.2rem;
+      background: var(--bg-input);
+      color: var(--text-primary);
+    }
+    .errorMsg {
+      font-size: 0.7rem;
+      color: var(--danger);
+    }
+  }
+}
+
+// Button
+
+.button {
+  background: var(--primary-color);
+  padding: 0.8rem 1rem;
+  border-radius: 0.2rem;
+  border: 1px solid var(--bg-primary);
+  color: var(--white);
+  display: block;
+  font-size: 1rem;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+  &:hover {
+    background: rgba($primary-color, 0.9);
+  }
+}

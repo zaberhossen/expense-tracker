@@ -1,0 +1,30 @@
+@import "variables";
+
+.container {
+  padding: 0 2rem;
+  background: var(--bg-primary);
+  min-height: 100vh;
+}
+
+.main {
+  padding: 4rem 0;
+  color: var(--text-primary);
+  max-width: 768px;
+  margin: 0 auto;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+.sectionTitle {
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.3rem;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+  font-size: 1rem;
+}

@@ -1,0 +1,32 @@
+// History section
+.history {
+  margin-bottom: 1.5rem;
+  ul {
+    li {
+      display: flex;
+      justify-content: space-between;
+      box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+      background: var(--white);
+      border-radius: 0.2rem;
+      padding: 0.6rem;
+      margin-bottom: 0.4rem;
+      font-size: 0.9rem;
+      color: var(--text-default);
+      &.income {
+        border-right: 4px solid var(--success);
+        .amount {
+          color: var(--success);
+        }
+      }
+      &.expense {
+        border-right: 4px solid var(--danger);
+        .amount {
+          color: var(--danger);
+        }
+      }
+    }
+  }
+  .emptyMsg {
+    color: var(--border-color);
+  }
+}
