@@ -9,12 +9,17 @@ export default function History() {
     <div className={styles.history}>
       {Data && Data.transactionList.length ? (
         <ul>
-          {Data.transactionList.map((item: IHistoryList, index: number) => (
+          {Data.transactionList.map((item: IHistoryList) => (
             <li
-              key={index}
+              key={item.id}
               className={item.amount < 0 ? styles.expense : styles.income}
             >
-              <span>{item.title}</span>{" "}
+              <span>
+                {item.title}{" "}
+                <span className={styles.date}>
+                  - {new Date(item.id).toLocaleString()}
+                </span>
+              </span>{" "}
               <span className={styles.amount}>{item.amount}</span>
             </li>
           ))}

@@ -1,7 +1,7 @@
 export type IHistoryList = {
   amount: number;
   title: string;
-  id?: string;
+  id: string;
 };
 
 //  type: "expense" | "income";

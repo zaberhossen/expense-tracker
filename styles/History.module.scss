@@ -12,6 +12,10 @@
       margin-bottom: 0.4rem;
       font-size: 0.9rem;
       color: var(--text-default);
+      .date {
+        font-size: 0.7rem;
+        color: var(--border-color);
+      }
       &.income {
         border-right: 4px solid var(--success);
         .amount {
