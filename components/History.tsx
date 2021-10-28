@@ -20,7 +20,11 @@ export default function History() {
                   - {new Date(item.id).toLocaleString()}
                 </span>
               </span>{" "}
-              <span className={styles.amount}>{item.amount}</span>
+              <span className={styles.amount}>
+                {item.amount < 0
+                  ? `- $${Math.abs(item.amount)}`
+                  : `$${item.amount}`}
+              </span>
             </li>
           ))}
         </ul>
